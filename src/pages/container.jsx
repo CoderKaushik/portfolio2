@@ -1,0 +1,84 @@
+import React, { useRef, useEffect } from "react";
+import Hero from "./hero.jsx";
+import About from "./about.jsx";
+import Projects from "./projects.jsx";
+import Contact from "./contact.jsx";
+import Experience from "./experience.jsx";
+import "./Container.css";
+
+const Container = ({ setActiveSection }) => {
+  const aboutRef = useRef(null);
+  const homeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const experienceRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions
+    );
+
+    const sections = [
+      aboutRef,
+      homeRef,
+      projectsRef,
+      experienceRef,
+      contactRef,
+    ];
+
+    sections.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => {
+      sections.forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
+  }, [setActiveSection, observerOptions]);
+
+  const handleClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const width = "calc(100vw - 15rem)";
+  const height = "calc(100vh - 0rem)";
+
+  return (
+    <div
+      style={{ width, height, overflow: "hidden" }} // Prevent scrolling in the container
+      className="h-auto absolute left-[15rem] top-[0rem] overflow-auto custom-scroll"
+      id="container"
+    >
+      <Hero id="hero" ref={homeRef} />
+      <About id="about" ref={aboutRef} />
+      <Experience id="experience" ref={experienceRef} />
+      <Projects id="projects" ref={projectsRef} />
+      <Contact id="contact" ref={contactRef} />
+    </div>
+  );
+};
+
+export default Container;
