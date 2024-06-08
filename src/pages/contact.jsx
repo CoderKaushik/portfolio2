@@ -39,11 +39,9 @@ const contact = ({ id }) => {
   useEffect(() => {
     emailjs.init("MBxSBvTT0sv4FOyR_");
   }, []);
-  const height = "calc(100vh - 0rem)";
   return (
     <div
-      style={{ height }}
-      className="bg-[#0C1137] w-full flex justify-center items-center bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] p-4"
+      className="bg-[#0C1137] h-screen w-full max-xl:w-screen flex justify-center items-center bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] p-4"
       id={id}
     >
       <div className="w-1/2 h-full p-4">
@@ -86,10 +84,6 @@ const contact = ({ id }) => {
           >
             Submit
           </button>
-          {/* <h1 className="w-full h-auto text-3xl mb-4 text-white font-semibold text-center">
-            My Socials
-          </h1>
-          <div className="w-full h-auto"></div> */}
         </form>
       </div>
       <div className="w-1/2 h-full flex flex-col justify-center p-4">
@@ -103,7 +97,7 @@ const contact = ({ id }) => {
             }}
             loop={true}
             modules={[EffectCards, Autoplay]}
-            className="mySwiper"
+            className="mySwiper w-[400px] h-[500px] max-lg:w-[300px] max-lg:h-[400px]"
           >
             <SwiperSlide className=" bg-blue-400">Tarsh</SwiperSlide>
             <SwiperSlide className=" bg-blue-600">Himanshu</SwiperSlide>
