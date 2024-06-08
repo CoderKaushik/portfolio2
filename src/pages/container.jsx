@@ -63,13 +63,9 @@ const Container = ({ setActiveSection }) => {
     }
   };
 
-  const width = "calc(100vw - 15rem)";
-  const height = "calc(100vh - 0rem)";
-
   return (
     <div
-      style={{ width, height, overflow: "hidden" }} // Prevent scrolling in the container
-      className="h-auto absolute left-[15rem] top-[0rem] overflow-auto custom-scroll"
+      className="h-screen w-[calc(100vw_-_15rem)] overflow-hidden absolute left-[15rem] top-[0rem] max-xl:w-full max-xl:left-0 max-xl:top-0 max-xl:overflow-scroll custom-scroll"
       id="container"
     >
       <Hero id="hero" ref={homeRef} />

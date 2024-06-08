@@ -22,13 +22,11 @@ import {
   SiVercel,
 } from "react-icons/si";
 import classNames from "classnames";
-import SpotifyImg from "../assets/spotify.svg";
 import ME from "../assets/my-image.png";
 import College from "../assets/iiitkota.png";
 import School from "../assets/school.png";
 import Signature from "../assets/signature.png";
 import "./about.css";
-// import Spotify from "../components/spotify";
 
 const About = ({ id }) => {
   const height = "calc(100vh - 0rem)";
@@ -116,7 +114,7 @@ const About = ({ id }) => {
       id={id}
     >
       <div className="w-full h-full flex flex-col items-center">
-        <div className="w-4/5 h-2/6 flex">
+        <div className="w-[90%] max-md:w-[100%] h-2/6 flex">
           <div className="w-1/3 h-full p-4">
             <div
               className={classNames(
@@ -132,7 +130,7 @@ const About = ({ id }) => {
               <div className="w-full h-full rounded-xl bg-blue-800 flex justify-center items-center">
                 <img
                   src={ME}
-                  className="w-[60%] border-2 border-blue-900 p-0 bg-blue-900 shadow-2xl rounded-full"
+                  className="w-[50%] max-tnd:w-[60%] max-md:w-[70%] max-sm:w-[80%] border-2 border-blue-900 p-0 bg-blue-900 shadow-2xl rounded-full"
                   alt=""
                 />
               </div>
@@ -140,13 +138,13 @@ const About = ({ id }) => {
           </div>
           <div className="w-2/3 h-full p-4 flex flex-col gap-6">
             <div className="w-full h-1/4 flex items-center">
-              <div className="w-2/12 text-gray-300 text-4xl text-center flex justify-end">
+              <div className="w-2/12 max-tnd:w-1/12 text-gray-300 text-4xl text-center flex justify-end">
                 <GoNorthStar />
               </div>
-              <h1 className="w-8/12 text-white font-semibold text-5xl text-center">
+              <h1 className="w-8/12 max-tnd:w-10/12 text-white font-semibold text-5xl max-tnd:text-4xl text-center">
                 SELF-SUMMARY
               </h1>
-              <div className="w-2/12 text-gray-300 text-4xl text-center flex justify-start">
+              <div className="w-2/12 max-tnd:w-1/12 text-gray-300 text-4xl text-center flex justify-start">
                 <GoNorthStar />
               </div>
             </div>
@@ -164,7 +162,7 @@ const About = ({ id }) => {
               <div className="w-full text-2xl mb-2 mt-2 text-gray-100">
                 <h1>Hiteshwar Kaushik</h1>
               </div>
-              <div className="w-11/12 h-auto text-gray-200 text-[12px]">
+              <div className="w-11/12 h-auto text-gray-200 text-[12px] max-tnd:text-[11px] max-sm:text-[10px] ">
                 <h2>
                   I am a Computer Science pre final year student at IIIT Kota,
                   with a focus on web development, Data Structures, Algorithms
@@ -175,11 +173,11 @@ const About = ({ id }) => {
             </div>
           </div>
         </div>
-        <div className="w-4/5 h-1/3 flex">
+        <div className="w-[90%] max-md:w-[100%] h-1/3 flex">
           <div className="w-1/2 h-full p-4 flex justify-center items-center">
             <div
               className={classNames(
-                "w-full h-full shadow-xl bg-blue-900 p-2 rounded-xl transition-opacity duration-1000 pl-6 flex flex-col justify-center",
+                "w-full h-full shadow-xl bg-blue-900 p-2 rounded-xl transition-opacity duration-1000 pl-6 max-md:pl-2 flex flex-col justify-center",
                 {
                   "opacity-0": !visibleDivs.includes("2"),
                   "opacity-100": visibleDivs.includes("2"),
@@ -196,9 +194,9 @@ const About = ({ id }) => {
                   </a>
                 </div>
                 <div className="w-[70%] h-full">
-                  <p className="text-gray-300 text-[12px]">2018-2021</p>
-                  <h2 className="text-gray-100 text-md">10th and 12th</h2>
-                  <p className="text-gray-300 text-[12px]">
+                  <p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">2018-2021</p>
+                  <h2 className="text-gray-100 text-md max-sm:text-sm">10th and 12th</h2>
+                  <p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
                     Army Public School, Ambala Cantt.
                   </p>
                 </div>
@@ -211,13 +209,13 @@ const About = ({ id }) => {
                 </div>
                 <div className="w-[70%] h-full">
                   <div className="w-full h-auto">
-                    <p className="text-gray-300 text-[12px]">
+                    <p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
                       2022-2026 (ongoing)
                     </p>
-                    <h2 className="text-gray-100 text-md">
+                    <h2 className="text-gray-100 text-md max-sm:text-sm">
                       Bachelor's in Technology
                     </h2>
-                    <p className="text-gray-300 text-[12px]">IIIT Kota</p>
+                    <p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">IIIT Kota</p>
                   </div>
                 </div>
               </div>
@@ -267,8 +265,8 @@ const About = ({ id }) => {
             </div>
           </div>
         </div>
-        <div className="w-4/5 h-1/3 flex">
-          <div className="w-1/4 p-4 h-full">
+        <div className="w-[90%] max-md:w-[100%] h-1/3 flex">
+          <div className="w-1/4 max-lg:w-1/3 p-4 h-full">
             <div
               className={classNames(
                 "w-full h-full rounded-xl shadow-xl bg-blue-900 flex flex-col items-center p-2 transition-opacity duration-1000",
@@ -280,21 +278,21 @@ const About = ({ id }) => {
               data-index="4"
               ref={(el) => (divRefs.current[4] = el)}
             >
-              <div className="w-[90%] h-2/3 rounded-2xl shadow-2xl flex gap-4 justify-center items-center bg-blue-800">
-                <div className="w-auto h-auto rounded-full text-gray-300 text-7xl shadow-2xl hover:cursor-pointer bg-blue-900">
+              <div className="w-[90%] h-2/3 rounded-2xl shadow-2xl flex gap-4 max-md:gap-2 justify-center items-center bg-blue-800">
+                <div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
                   <FaLinkedinIn className="p-4" />
                 </div>
-                <div className="w-auto h-auto rounded-full text-gray-300 text-7xl shadow-2xl hover:cursor-pointer bg-blue-900">
+                <div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
                   <FaGithub className="p-4" />
                 </div>
               </div>
               <div className="w-[90%] h-1/3 flex flex-col justify-center items-start text-gray-300 text-md">
-                <p className="text-[12px] text-gray-300">stay with me</p>
+                <p className="text-[12px] max-tnd:text-[11px]  text-gray-300">stay with me</p>
                 <h1>My Profiles</h1>
               </div>
             </div>
           </div>
-          <div className="w-2/4 p-4 h-full">
+          <div className="w-2/4 max-lg:w-1/3 p-4 h-full">
             <div
               className={classNames(
                 "w-full h-full rounded-xl shadow-xl bg-blue-900 p-2 transition-opacity duration-1000 flex flex-col pl-4 hover:cursor-pointer",
@@ -307,7 +305,7 @@ const About = ({ id }) => {
               ref={(el) => (divRefs.current[5] = el)}
             >
               <div className="w-full h-2/5"></div>
-              <div className="w-full h-3/5 flex flex-col text-semibold text-gray-100 text-4xl gap-2">
+              <div className="w-full h-3/5 flex flex-col text-semibold text-gray-100 text-4xl max-tnd:text-2xl gap-2">
                 <h1>Let's</h1>
                 <h1>
                   work <span className="text-red-400">together.</span>
@@ -315,7 +313,7 @@ const About = ({ id }) => {
               </div>
             </div>
           </div>
-          <div className="w-1/4 p-4 h-full">
+          <div className="w-1/4 max-lg:w-1/3 p-4 h-full">
             <div
               className={classNames(
                 "w-full h-full rounded-xl shadow-xl bg-blue-900 p-2 transition-opacity duration-1000 flex flex-col",
@@ -331,7 +329,7 @@ const About = ({ id }) => {
                 <img src={Signature} alt="" />
               </div>
               <div className="w-full h-[30%] text-gray-200 flex flex-col p-2">
-                <p className="text-[12px] text-gray-300">More about me</p>
+                <p className="text-[12px] max-tnd:text-[11px]  text-gray-300">More about me</p>
                 <h1 className="text-gray-300 text-md">My credentials</h1>
               </div>
             </div>

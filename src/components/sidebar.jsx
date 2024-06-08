@@ -42,7 +42,7 @@ const Sidebar = ({ activeSection }) => {
   };
 
   return (
-    <div className="absolute left-0 top-0 h-screen w-[15rem] bg-[#232C79]">
+    <div className="absolute left-0 top-0 h-screen w-[15rem] bg-[#232C79] max-xl:hidden">
       <div className="absolute top-0 w-full h-[7rem] flex flex-col justify-center items-center">
         <div
           className="flip-container hover:cursor-pointer"
