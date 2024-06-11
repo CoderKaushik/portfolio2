@@ -41,10 +41,10 @@ const contact = ({ id }) => {
   }, []);
   return (
     <div
-      className="bg-[#0C1137] h-screen w-full max-xl:w-screen flex justify-center items-center bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] p-4"
+      className="bg-[#0C1137] h-screen max-md:h-[200vh] max-md:py-20 w-full max-xl:w-screen flex max-md:flex-col justify-center items-center bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] p-4"
       id={id}
     >
-      <div className="w-1/2 h-full p-4">
+      <div className="w-1/2 max-md:w-full h-full p-4">
         <form
           className="w-full h-full flex flex-col justify-center"
           ref={form}
@@ -86,7 +86,7 @@ const contact = ({ id }) => {
           </button>
         </form>
       </div>
-      <div className="w-1/2 h-full flex flex-col justify-center p-4">
+      <div className="w-1/2 max-md:w-full h-full flex flex-col justify-center p-4">
         <div className="w-full h-full flex justify-center items-center">
           <Swiper
             effect={"cards"}
@@ -97,7 +97,7 @@ const contact = ({ id }) => {
             }}
             loop={true}
             modules={[EffectCards, Autoplay]}
-            className="mySwiper w-[400px] h-[500px] max-lg:w-[300px] max-lg:h-[400px]"
+            className="mySwiper w-[400px] h-[500px] max-sm:w-[300px] max-sm:h-[400px] max-md:w-[400px] max-md:h-[500px] max-lg:w-[300px] max-lg:h-[400px]"
           >
             <SwiperSlide className=" bg-blue-400">Tarsh</SwiperSlide>
             <SwiperSlide className=" bg-blue-600">Himanshu</SwiperSlide>

@@ -5,6 +5,7 @@ import Projects from "./projects.jsx";
 import Contact from "./contact.jsx";
 import Experience from "./experience.jsx";
 import "./Container.css";
+import Footer from "../components/Footer.jsx"
 
 const Container = ({ setActiveSection }) => {
   const aboutRef = useRef(null);
@@ -73,6 +74,7 @@ const Container = ({ setActiveSection }) => {
       <Experience id="experience" ref={experienceRef} />
       <Projects id="projects" ref={projectsRef} />
       <Contact id="contact" ref={contactRef} />
+      <Footer />
     </div>
   );
 };
