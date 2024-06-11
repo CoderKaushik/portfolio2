@@ -211,9 +211,11 @@ const Experience = ({ id }) => {
 							forged partnerships with over 10 college festivals, enhancing our
 							outreach and impact. You
 						</div>
-						<button className="absolute bottom-2 right-2 p-2 bg-blue-600 hover:cursor-pointer hover:bg-blue-500 rounded-xl shadow-xl text-gray-100">
-							Link Tree
-						</button>
+						<a href="https://linktr.ee/Iiitians.network" target="_blank">
+							<button className="absolute bottom-2 right-2 p-2 bg-blue-600 hover:cursor-pointer hover:bg-blue-500 rounded-xl shadow-xl text-gray-100">
+								Link Tree
+							</button>
+						</a>
 					</div>
 
 					<div
@@ -244,9 +246,11 @@ const Experience = ({ id }) => {
 							placement cell to enhance online presence and networking
 							opportunities.
 						</div>
-						<button className="absolute bottom-2 right-2 p-2 bg-blue-600 hover:cursor-pointer hover:bg-blue-500 rounded-xl shadow-xl text-gray-100">
-							Placement Portal
-						</button>
+						<a href="https://tpcell.iiitkota.ac.in/" target="_blank">
+							<button className="absolute bottom-2 right-2 p-2 bg-blue-600 hover:cursor-pointer hover:bg-blue-500 rounded-xl shadow-xl text-gray-100">
+								Website
+							</button>
+						</a>
 					</div>
 				</div>
 				<div className="w-1/2 h-full max-md:w-full max-md:h-[100vh] flex flex-col p-4 gap-4">
