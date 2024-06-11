@@ -111,7 +111,7 @@ const About = ({ id }) => {
 			className="bg-[#0C1137] w-full h-screen max-sm:h-[130vh] flex flex-col justify-center items-center p-4 max-sm:p-2 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"
 			id={id}
 		>
-			<div className="w-screen hidden max-sm:block h-[8rem]">
+			<div className="w-full hidden max-sm:block h-[8rem]">
 				<div className="w-full h-full flex justify-center items-center">
 					<h1 className="text-4xl text-gray-200">A B O U T</h1>
 				</div>
@@ -291,12 +291,19 @@ const About = ({ id }) => {
 							ref={(el) => (divRefs.current[4] = el)}
 						>
 							<div className="w-[90%] h-2/3 rounded-2xl shadow-2xl flex gap-4 max-sm:p-2 max-md:gap-2 max-sm:gap-1 justify-center items-center bg-blue-800">
-								<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
-									<FaLinkedinIn className="p-4 max-sm:p-2" />
-								</div>
-								<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
-									<FaGithub className="p-4 max-sm:p-2" />
-								</div>
+								<a
+									href="https://www.linkedin.com/in/hiteshwarkaushik"
+									target="_blank"
+								>
+									<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
+										<FaLinkedinIn className="p-4 max-sm:p-2" />
+									</div>
+								</a>
+								<a href="https://www.github.com/coderkaushik" target="_blank">
+									<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
+										<FaGithub className="p-4 max-sm:p-2" />
+									</div>
+								</a>
 							</div>
 							<div className="w-[90%] h-1/3 flex flex-col justify-center items-start text-gray-300 text-md">
 								<p className="text-[12px] max-tnd:text-[11px]  text-gray-300">
