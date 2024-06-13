@@ -193,17 +193,17 @@ const About = ({ id }) => {
 								Education
 							</p>
 							<div className="w-full h-1/2 mb-0 flex mt-2 max-sm:gap-2">
-								<div className="w-[30%] h-full flex justify-center items-start max-sm:items-center">
+								<div className="w-[30%] max-sm:hidden h-full flex justify-center items-start max-sm:items-center">
 									<a href="https://www.apsambala.edu.in" target="_blank">
 										{" "}
 										<img src={School} className="w-[4rem]" alt="" />
 									</a>
 								</div>
-								<div className="w-[70%] h-full">
+								<div className="w-[70%] max-sm:w-full h-full">
 									<p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
 										2018-21
 									</p>
-									<h2 className="text-gray-100 text-md max-sm:text-sm">
+									<h2 className="text-gray-100 max-sm:text-[12px] text-md max-sm:text-sm">
 										10th and 12th
 									</h2>
 									<p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
@@ -212,22 +212,22 @@ const About = ({ id }) => {
 								</div>
 							</div>
 							<div className="w-full h-1/2 flex max-sm:gap-2">
-								<div className="w-[30%] h-full flex justify-center items-start max-sm:items-center">
+								<div className="w-[30%] max-sm:hidden h-full flex justify-center items-start max-sm:items-center">
 									<a href="https://www.iiitkota.ac.in" target="_blank">
 										<img src={College} className="w-[3.5rem]" alt="" />
 									</a>
 								</div>
-								<div className="w-[70%] h-full">
+								<div className="w-[70%] max-sm:w-full h-full">
 									<div className="w-full h-auto">
 										<p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
 											2022-26
 										</p>
-										<h2 className="text-gray-100 text-md max-sm:text-sm max-sm:hidden">
+										<h2 className="text-gray-100 text-md max-sm:text-[12px] ">
 											Bachelor's in Technology
 										</h2>
-										<h2 className="text-gray-100 text-md max-sm:text-sm hidden max-sm:block">
+										{/* <h2 className="text-gray-100 text-md max-sm:text-sm hidden max-sm:block">
 											B.Tech.
-										</h2>
+										</h2> */}
 										<p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
 											IIIT Kota
 										</p>
@@ -293,17 +293,17 @@ const About = ({ id }) => {
 							data-index="4"
 							ref={(el) => (divRefs.current[4] = el)}
 						>
-							<div className="w-[90%] h-2/3 rounded-2xl shadow-2xl flex gap-4 max-sm:p-2 max-md:gap-2 max-sm:gap-1 justify-center items-center bg-blue-800">
+							<div className="w-[90%] h-2/3 rounded-2xl shadow-2xl flex gap-4 max-sm:p-2 max-md:gap-2 max-sm:gap-[1px] justify-center items-center bg-blue-800">
 								<a
 									href="https://www.linkedin.com/in/hiteshwarkaushik"
 									target="_blank"
 								>
-									<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
+									<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-sm:text-5xl max-sm:p-2 max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
 										<FaLinkedinIn className="p-4 max-sm:p-2" />
 									</div>
 								</a>
 								<a href="https://www.github.com/coderkaushik" target="_blank">
-									<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl shadow-2xl hover:cursor-pointer bg-blue-900">
+									<div className="w-auto h-auto rounded-full text-gray-300 text-7xl max-md:text-6xl max-sm:text-5xl max-sm:p-2 shadow-2xl hover:cursor-pointer bg-blue-900">
 										<FaGithub className="p-4 max-sm:p-2" />
 									</div>
 								</a>
