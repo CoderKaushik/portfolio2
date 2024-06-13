@@ -187,28 +187,20 @@ const Sidebar = ({ activeSection }) => {
               ) : (
                 <div className="w-full h-[80%] flex flex-col justify-start -mt-[2rem] gap-8 overflow-y-scroll custom-scroll">
                   <FAQAccordian
-                    question="What is Flowbite?"
-                    answer="Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more."
+                    question="Who am I?"
+                    answer="I'm Hiteshwar Kaushik - a junior year computer science undergrad at IIIT Kota. I'm a MERN stack developer, a DSA enthusiast, a Competitive Programmer, and a community leader."
                   />
                   <FAQAccordian
-                    question="Is there a Figma file available?"
-                    answer="Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+                    question="How to contact you?"
+                    answer="You can reach out to me at my professional mail address - hiteshwarkaushik@gmail.com, through my LinkedIn where I'm active, or through this website."
                   />
                   <FAQAccordian
-                    question="What are the differences between Flowbite and Tailwind UI?"
-                    answer="The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+                    question="When are you available for interns/job?"
+                    answer="I will be looking for SDE interns throughout my Junior Year, and job opportunities next year. I'm also a placement trainee at IIIT Kota, feel free to reach out to me for any placement related queries you might have as an HR/Recruiter."
                   />
                   <FAQAccordian
-                    question="What are the differences between Flowbite and Tailwind UI?"
-                    answer="The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
-                  />
-                  <FAQAccordian
-                    question="What are the differences between Flowbite and Tailwind UI?"
-                    answer="The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
-                  />
-                  <FAQAccordian
-                    question="What are the differences between Flowbite and Tailwind UI?"
-                    answer="The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+                    question="What kind of projects have you worked upon in the past?"
+                    answer="I've made several full stack projects leveraging the MERN stack, RESTful apis and Tailwind Css."
                   />
                 </div>
               )}

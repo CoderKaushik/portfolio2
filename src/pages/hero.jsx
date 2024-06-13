@@ -141,11 +141,13 @@ const Hero = ({ id }) => {
                             />
                         </div>
                         <div className="w-full h-auto flex gap-6 max-sm:gap-4 max-sm:hidden">
-                            <div className="lower-divs w-1/2 max-sm:w-1/2 max-md:w-2/5 h-[12rem] rounded-xl bg-gradient-to-r from-blue-500 to-blue-800 hover:bg-gradient-to-r hover:cursor-pointer flex justify-center items-center">
-                                <p className="text-gray-200 text-4xl max-sm:text-2xl">Connect with me</p>
+                            <div className="lower-divs w-1/2 max-sm:w-1/2 max-md:w-2/5 h-[12rem] rounded-xl bg-gradient-to-r from-blue-500 to-blue-800 hover:bg-gradient-to-r hover:cursor-pointer flex flex-col justify-center items-center">
+                                <p className="text-gray-200 text-4xl max-sm:text-2xl font-bold">Connect with me</p>
+                                <p className="text-gray-200 text-sm font-sans">(Scroll to Contact section)</p>
                             </div>
-                            <div className="lower-divs w-1/2 max-sm:w-1/2 max-md:w-2/5 h-[12rem] rounded-xl bg-gradient-to-r from-blue-500 to-blue-800 hover:bg-gradient-to-r hover:cursor-pointer flex justify-center items-center">
-                            <p className="text-gray-200 text-4xl max-sm:text-2xl">More about me</p>
+                            <div className="lower-divs w-1/2 max-sm:w-1/2 max-md:w-2/5 h-[12rem] rounded-xl bg-gradient-to-r from-blue-500 to-blue-800 hover:bg-gradient-to-r hover:cursor-pointer flex flex-col justify-center items-center">
+                            <p className="text-gray-200 text-4xl max-sm:text-2xl font-bold">More about me</p>
+                            <p className="text-gray-200 text-sm font-sans">(Scroll to About section)</p>
                             </div>
                         </div>
                     </div>
