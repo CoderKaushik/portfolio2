@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='w-full h-2/3 flex max-md:h-3/4 max-md:flex-col-reverse border-b-2 border-white'>
           <div className='w-2/3 h-full max-md:w-full flex flex-col max-md:text-center max-md:items-center justify-end gap-2'>
             <h1 className='w-full text-3xl text-blue-500'>Hiteshwar Kaushik</h1>
-            <p className='w-full text-gray-300 text-md'>Vice President - IIITians Network | Google DSC PR - Outreach Lead | B.Tech. CSE IIITK'26 | MERN Stack Dev | Web Team'23 - IIIT Kota</p>
+            <p className='w-full text-gray-300 text-md'>President - IIITians Network | Placement Trainee - IIIT Kota | Google DSC PR - Outreach Lead | B.Tech. CSE IIITK'26 | MERN Stack Dev | Web Team'23 - IIIT Kota</p>
             <div className='w-full h-auto flex justify-start max-md:justify-center gap-2 mb-4'>
               <img src={College} className='w-[60px] h-[60px]' alt="" />
               <img src={GDSC} className='w-[60px] h-[60px]' alt="" />
