@@ -66,7 +66,7 @@ const Container = ({ setActiveSection }) => {
 
   return (
     <div
-      className="h-screen w-[calc(100vw_-_15rem)] overflow-hidden absolute left-[15rem] top-[0rem] max-xl:w-full max-xl:left-0 max-xl:top-0 max-xl:overflow-scroll custom-scroll"
+      className="h-screen max-sm:fixed max-sm:left-0 max-sm:top-0 max-sm:overflow-x-hidden w-[calc(100vw_-_15rem)] overflow-hidden absolute left-[15rem] top-[0rem] max-xl:w-full max-xl:left-0 max-xl:top-0 max-xl:overflow-scroll custom-scroll"
       id="container"
     >
       <Hero id="hero" ref={homeRef} />

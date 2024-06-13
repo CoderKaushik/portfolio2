@@ -144,7 +144,7 @@ const About = ({ id }) => {
 							<div className="w-2/12 max-tnd:w-1/12 text-gray-300 text-4xl text-center flex justify-end">
 								<GoNorthStar />
 							</div>
-							<h1 className="w-8/12 max-tnd:w-10/12 text-white font-semibold text-5xl max-sm:text-lg max-tnd:text-4xl text-center">
+							<h1 className="w-8/12 max-tnd:w-10/12 text-white font-semibold text-5xl max-sm:text-[14px] max-tnd:text-4xl text-center">
 								SELF-SUMMARY
 							</h1>
 							<div className="w-2/12 max-tnd:w-1/12 text-gray-300 text-4xl text-center flex justify-start">
@@ -165,7 +165,7 @@ const About = ({ id }) => {
 							<div className="w-full text-2xl max-sm:text-[16px] mb-2 max-sm:mb-0 mt-2 max-sm:mt-0 text-gray-100">
 								<h1>Hiteshwar Kaushik</h1>
 							</div>
-							<div className="w-11/12 max-sm:w-full h-auto text-gray-200 text-[12px] max-tnd:text-[11px] max-sm:text-[9px] ">
+							<div className="w-11/12 max-sm:w-full h-auto text-gray-200 text-[12px] max-tnd:text-[11px] max-sm:text-[9px]">
 								<h2>
 									I am a Computer Science pre final year student at IIIT Kota,
 									with a focus on web development, Data Structures, Algorithms
@@ -180,7 +180,7 @@ const About = ({ id }) => {
 					<div className="w-1/2 h-full p-4 max-sm:p-2 flex justify-center items-center">
 						<div
 							className={classNames(
-								"w-full h-full shadow-xl bg-blue-900 p-2 rounded-xl transition-opacity duration-1000 pl-6 max-md:pl-2 flex flex-col justify-center",
+								"w-full h-full shadow-xl bg-blue-900 p-2 rounded-xl transition-opacity duration-1000 pl-2 max-md:pl-2 flex flex-col justify-center",
 								{
 									"opacity-0": !visibleDivs.includes("2"),
 									"opacity-100": visibleDivs.includes("2"),
@@ -189,7 +189,10 @@ const About = ({ id }) => {
 							data-index="2"
 							ref={(el) => (divRefs.current[2] = el)}
 						>
-							<div className="w-full h-1/2 mb-4 flex mt-2 max-sm:gap-2">
+							<p className="w-full text-sm text-gray-300 mt-2 text-md">
+								Education
+							</p>
+							<div className="w-full h-1/2 mb-0 flex mt-2 max-sm:gap-1">
 								<div className="w-[30%] h-full flex justify-center items-start max-sm:items-center">
 									<a href="https://www.apsambala.edu.in" target="_blank">
 										{" "}
@@ -222,7 +225,7 @@ const About = ({ id }) => {
 										<h2 className="text-gray-100 text-md max-sm:text-sm max-sm:hidden">
 											Bachelor's in Technology
 										</h2>
-										<h2 className="text-gray-100 text-md max-sm:text-sm max-sm:block">
+										<h2 className="text-gray-100 text-md max-sm:text-sm hidden max-sm:block">
 											B.Tech.
 										</h2>
 										<p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
@@ -335,9 +338,11 @@ const About = ({ id }) => {
 						</div>
 					</div>
 					<div className="w-1/4 max-sm:w-1/2 max-lg:w-1/3 p-4 max-sm:p-2 h-full">
-						<div
+						<a
+							href="https://link-tree-ivory-three.vercel.app/"
+							target="_blank"
 							className={classNames(
-								"w-full h-full rounded-xl shadow-xl bg-blue-900 p-2 transition-opacity duration-1000 flex flex-col",
+								"w-full h-full rounded-xl shadow-xl bg-blue-900 p-2 transition-opacity duration-1000 flex flex-col hover:cursor-pointer",
 								{
 									"opacity-0": !visibleDivs.includes("6"),
 									"opacity-100": visibleDivs.includes("6"),
@@ -355,7 +360,7 @@ const About = ({ id }) => {
 								</p>
 								<h1 className="text-gray-300 text-md">My credentials</h1>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>

@@ -10,7 +10,7 @@ import "./hero.css";
 
 const Hero = ({ id }) => {
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(min-width: 200px)");
+        const mediaQuery = window.matchMedia("(min-width: 640px)");
 
         let vantaEffect;
         const handleMediaChange = (e) => {
@@ -53,7 +53,7 @@ const Hero = ({ id }) => {
         >
             <div className="h-full w-full overflow-clip bg-[#0C1137] md:bg-[#0C1137]" id="herodiv">
                 <div className="w-full h-[7rem] max-xl:h-[5rem] flex">
-                    <div className="w-[25%] h-full flex items-center">
+                    <div className="w-[25%] h-full flex items-center max-sm:hidden">
                         <div className="w-full h-full flex justify-start ml-6 items-center gap-6 p-2">
                             <a
                                 href="mailto:hiteshwarkaushik@gmail.com"
@@ -98,29 +98,29 @@ const Hero = ({ id }) => {
                             </a>
                         </div>
                     </div>
-                    <div className="w-[75%] h-full p-1 flex items-center justify-end">
+                    <div className="w-[75%] max-sm:w-screen h-full p-2 flex items-center justify-end">
                         <div className="w-[4rem] h-[4rem] hidden max-xl:block text-[#01E2CD] p-2 rounded-full shadow-2xl bg-blue-900 hover:cursor-pointer">
                             <Hamburger id="hamburger shadow-2xl" />
                         </div>
                     </div>
                 </div>
                 <div className="w-full h-[100%] flex">
-                    <div className="w-[60%] max-xl:w-[75%] max-md:w-[100%] h-[100%]  p-6">
+                    <div className="w-[60%] max-xl:w-[75%] max-md:w-[100%] h-[100%] p-6 max-sm:p-2">
                         <div className="w-full h-auto mb-10  max-xl:mb-6">
-                            <h1 className="text-blue-300 text-7xl max-sm:text-6xl">Hi,</h1>
+                            <h1 className="text-blue-300 text-7xl max-sm:text-8xl">Hi,</h1>
                         </div>
                         <div className="w-full h-auto mb-6">
-                            <h1 className="text-blue-300 text-6xl max-sm:text-5xl">
+                            <h1 className="text-blue-300 text-6xl max-sm:text-7xl">
                                 I'm{" "}
-                                <span className="text-red-400 max-sm:text-gray-100 font-semibold">Hiteshwar</span>,
+                                <span className="text-red-400 font-semibold">Hiteshwar</span>,
                             </h1>
                         </div>
                         <div className="w-full h-auto  mb-6">
-                            <h1 className="text-blue-300 font-semibold text-6xl max-sm:text-5xl">
+                            <h1 className="text-blue-300 font-semibold text-6xl max-sm:text-7xl">
                                 Web Developer
                             </h1>
                         </div>
-                        <div className="w-full h-auto mb-6 text-gray-300 text-[10px] max-sm:text-[8px]">
+                        <div className="w-full h-auto mb-6 text-gray-300 text-[10px] max-sm:text-[10px]">
                             <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially
@@ -128,7 +128,7 @@ const Hero = ({ id }) => {
                                     1000, // wait 1s before replacing "Mice" with "Hamsters"
                                     "Well versed in Full Stack Development",
                                     1000,
-                                    "Well versed in Data Structures & Algorithms",
+                                    "Well versed in DS & Algorithms",
                                     1000,
                                     "A ",
                                     1000,
@@ -146,7 +146,7 @@ const Hero = ({ id }) => {
                                 repeat={Infinity}
                             />
                         </div>
-                        <div className="w-full h-auto flex gap-6 max-sm:gap-4">
+                        <div className="w-full h-auto flex gap-6 max-sm:gap-4 max-sm:hidden">
                             <div className="lower-divs w-1/2 max-sm:w-1/2 max-md:w-2/5 h-[12rem] rounded-xl bg-gradient-to-r from-blue-500 to-blue-800 hover:bg-gradient-to-r hover:cursor-pointer flex justify-center items-center">
                                 <p className="text-gray-200 text-4xl max-sm:text-2xl">Connect with me</p>
                             </div>
