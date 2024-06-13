@@ -133,7 +133,7 @@ const About = ({ id }) => {
 							<div className="w-full h-full rounded-xl bg-blue-800 flex justify-center items-center">
 								<img
 									src={ME}
-									className="w-[50%] max-tnd:w-[60%] max-md:w-[70%] max-sm:w-[80%] border-2 border-blue-900 p-0 bg-blue-900 shadow-2xl rounded-full"
+									className="w-[50%] max-tnd:w-[60%] max-md:w-[70%] max-sm:w-[80%] border-2 border-blue-900 p-0 bg-blue-950 shadow-2xl rounded-full"
 									alt=""
 								/>
 							</div>

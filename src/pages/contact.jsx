@@ -99,7 +99,7 @@ const contact = ({ id }) => {
 						modules={[EffectCards, Autoplay]}
 						className="mySwiper w-[400px] h-[500px] max-sm:w-[300px] max-sm:h-[400px] max-md:w-[400px] max-md:h-[500px] max-lg:w-[300px] max-lg:h-[400px]"
 					>
-						<SwiperSlide className=" bg-blue-400 p-4 flex justify-center items-center">
+						<SwiperSlide className=" bg-blue-600 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
 								<p className="text-gray-900 mb-4 text-lg">
 									"Hiteshwar is a great developer with a zeal to excel in latest
@@ -108,7 +108,7 @@ const contact = ({ id }) => {
 								<p className="text-gray-900 text-lg">- Partik Malasi</p>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className=" bg-blue-600 p-4 flex justify-center items-center">
+						<SwiperSlide className=" bg-blue-800 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
 								<p className="text-gray-300 mb-4 text-lg">
 									"Hiteshwar is a nice guy and he is always ready to help
@@ -118,7 +118,7 @@ const contact = ({ id }) => {
 								<p className="text-gray-300 text-lg">- Rohan Saini</p>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className=" bg-blue-400 p-4 flex justify-center items-center">
+						<SwiperSlide className=" bg-blue-600 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
 								<p className="text-gray-900 mb-4 text-lg">
 									"Working with Hiteshwar has been a game-changer for our me. His attention to detail and creativity are unmatched.  I've never met a web developer who truly cares about their clients' success like he does."
@@ -126,7 +126,7 @@ const contact = ({ id }) => {
 								<p className="text-gray-900 text-lg">- Lakshay Dhall</p>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className=" bg-blue-600 p-4 flex justify-center items-center">
+						<SwiperSlide className=" bg-blue-800 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
 								<p className="text-gray-300 mb-4 text-lg">
 									"He is an exemplary developer, always eager to learn new skills. He is very hardworking and always committed to continuous improvement. He is dedicated to his work and is a quick learner."
@@ -134,7 +134,7 @@ const contact = ({ id }) => {
 								<p className="text-gray-300 text-lg">- Anushka Chauhan</p>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className=" bg-blue-400 p-4 flex justify-center items-center">
+						<SwiperSlide className=" bg-blue-600 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
 								<p className="text-gray-900 mb-4 text-lg">
 									"Hiteshwar is an amazing guy, always keen to learn"
@@ -142,7 +142,7 @@ const contact = ({ id }) => {
 								<p className="text-gray-900 text-lg">- Himanshu Rautela</p>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className=" bg-blue-600 p-4 flex justify-center items-center">
+						<SwiperSlide className=" bg-blue-800 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
 								<p className="text-gray-300 mb-4 text-sm">
 									"I've known Hiteshwar since before he started college, and his dedication and work ethic have always been impressive. He's not only highly organized and punctual, but also possesses exceptional leadership qualities. Throughout his academic career, he's consistently demonstrated a drive to excel, placing him at the forefront of his peers."
