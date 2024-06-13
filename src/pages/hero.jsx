@@ -5,7 +5,6 @@ import { IoDocumentText } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
 import { Tooltip } from "react-tooltip";
 import { TypeAnimation } from "react-type-animation";
-import { Squash as Hamburger } from "hamburger-react";
 import "./hero.css";
 
 const Hero = ({ id }) => {
@@ -48,10 +47,10 @@ const Hero = ({ id }) => {
 
     return (
         <div
-            className="w-full h-screen hover:cursor-crosshair max-md:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] max-md:bg-[size:14px_24px]"
+            className="w-full h-screen bg-[#0C1137] hover:cursor-crosshair max-md:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] max-md:bg-[size:14px_24px]"
             id={id}
         >
-            <div className="h-full w-full overflow-clip bg-[#0C1137] md:bg-[#0C1137]" id="herodiv">
+            <div className="h-full w-full overflow-clip" id="herodiv">
                 <div className="w-full h-[7rem] max-xl:h-[5rem] flex">
                     <div className="w-[25%] h-full flex items-center max-sm:hidden">
                         <div className="w-full h-full flex justify-start ml-6 items-center gap-6 p-2">
@@ -96,11 +95,6 @@ const Hero = ({ id }) => {
                                     alt="LinkTree"
                                 />
                             </a>
-                        </div>
-                    </div>
-                    <div className="w-[75%] max-sm:w-screen h-full p-2 flex items-center justify-end">
-                        <div className="w-[4rem] h-[4rem] hidden max-xl:block text-[#01E2CD] p-2 rounded-full shadow-2xl bg-blue-900 hover:cursor-pointer">
-                            <Hamburger id="hamburger shadow-2xl" />
                         </div>
                     </div>
                 </div>

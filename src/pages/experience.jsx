@@ -256,7 +256,7 @@ const Experience = ({ id }) => {
 				<div className="w-1/2 h-full max-md:w-full max-md:h-[100vh] flex flex-col p-4 gap-4">
 					<div
 						className={classNames(
-							"w-full h-1/2 shadow-xl bg-blue-900  rounded-xl transition-opacity duration-1000",
+							"w-full h-1/2 shadow-xl bg-blue-900 rounded-xl transition-opacity duration-1000 relative",
 							{
 								"opacity-0": !visibleDivs.includes("2"),
 								"opacity-100": visibleDivs.includes("2"),
@@ -282,6 +282,11 @@ const Experience = ({ id }) => {
 							the institution's digital presence and facilitated seamless access
 							to information for stakeholders.
 						</div>
+						<a href="https://tpcell.iiitkota.ac.in/" target="_blank">
+							<button className="absolute bottom-2 right-2 p-2 bg-blue-600 hover:cursor-pointer hover:bg-blue-500 rounded-xl shadow-xl text-gray-100">
+								Website
+							</button>
+						</a>
 					</div>
 
 					<div

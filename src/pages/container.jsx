@@ -5,78 +5,82 @@ import Projects from "./projects.jsx";
 import Contact from "./contact.jsx";
 import Experience from "./experience.jsx";
 import "./Container.css";
-import Footer from "../components/Footer.jsx"
+import Footer from "../components/Footer.jsx";
+import { Squash as Hamburger } from "hamburger-react";
 
 const Container = ({ setActiveSection }) => {
-  const aboutRef = useRef(null);
-  const homeRef = useRef(null);
-  const projectsRef = useRef(null);
-  const experienceRef = useRef(null);
-  const contactRef = useRef(null);
+	const aboutRef = useRef(null);
+	const homeRef = useRef(null);
+	const projectsRef = useRef(null);
+	const experienceRef = useRef(null);
+	const contactRef = useRef(null);
 
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  };
+	const observerOptions = {
+		root: null,
+		rootMargin: "0px",
+		threshold: 0.5,
+	};
 
-  useEffect(() => {
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    };
+	useEffect(() => {
+		const handleIntersection = (entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					setActiveSection(entry.target.id);
+				}
+			});
+		};
 
-    const observer = new IntersectionObserver(
-      handleIntersection,
-      observerOptions
-    );
+		const observer = new IntersectionObserver(
+			handleIntersection,
+			observerOptions
+		);
 
-    const sections = [
-      aboutRef,
-      homeRef,
-      projectsRef,
-      experienceRef,
-      contactRef,
-    ];
+		const sections = [
+			aboutRef,
+			homeRef,
+			projectsRef,
+			experienceRef,
+			contactRef,
+		];
 
-    sections.forEach((ref) => {
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-    });
+		sections.forEach((ref) => {
+			if (ref.current) {
+				observer.observe(ref.current);
+			}
+		});
 
-    return () => {
-      sections.forEach((ref) => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
-      });
-    };
-  }, [setActiveSection, observerOptions]);
+		return () => {
+			sections.forEach((ref) => {
+				if (ref.current) {
+					observer.unobserve(ref.current);
+				}
+			});
+		};
+	}, [setActiveSection, observerOptions]);
 
-  const handleClick = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+	const handleClick = (id) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 
-  return (
-    <div
-      className="h-screen max-sm:fixed max-sm:left-0 max-sm:top-0 max-sm:overflow-x-hidden w-[calc(100vw_-_15rem)] overflow-hidden absolute left-[15rem] top-[0rem] max-xl:w-full max-xl:left-0 max-xl:top-0 max-xl:overflow-scroll custom-scroll"
-      id="container"
-    >
-      <Hero id="hero" ref={homeRef} />
-      <About id="about" ref={aboutRef} />
-      <Experience id="experience" ref={experienceRef} />
-      <Projects id="projects" ref={projectsRef} />
-      <Contact id="contact" ref={contactRef} />
-      <Footer />
-    </div>
-  );
+	return (
+		<div
+			className="h-screen max-sm:fixed max-sm:left-0 max-sm:top-0 max-sm:overflow-x-hidden w-[calc(100vw_-_15rem)] overflow-hidden absolute left-[15rem] top-[0rem] max-xl:w-full max-xl:left-0 max-xl:top-0 max-xl:overflow-scroll custom-scroll"
+			id="container"
+		>
+				<div className="w-[4rem] h-[4rem] hidden max-xl:block text-[#01E2CD] fixed top-2 right-2 z-10 p-2 rounded-full shadow-2xl bg-blue-950 hover:cursor-pointer">
+					<Hamburger id="hamburger shadow-2xl" />
+			</div>
+			<Hero id="hero" ref={homeRef} />
+			<About id="about" ref={aboutRef} />
+			<Experience id="experience" ref={experienceRef} />
+			<Projects id="projects" ref={projectsRef} />
+			<Contact id="contact" ref={contactRef} />
+			<Footer />
+		</div>
+	);
 };
 
 export default Container;
