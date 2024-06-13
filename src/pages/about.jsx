@@ -162,7 +162,7 @@ const About = ({ id }) => {
 							data-index="1"
 							ref={(el) => (divRefs.current[1] = el)}
 						>
-							<div className="w-full text-2xl max-sm:text-[16px] mb-2 max-sm:mb-0 mt-2 max-sm:mt-0 text-gray-100">
+							<div className="w-full text-2xl max-sm:text-[14px] mb-2 max-sm:mb-0 mt-2 max-sm:-mt-1 text-gray-100">
 								<h1>Hiteshwar Kaushik</h1>
 							</div>
 							<div className="w-11/12 max-sm:w-full h-auto text-gray-200 text-[12px] max-tnd:text-[11px] max-sm:text-[9px]">
@@ -192,7 +192,7 @@ const About = ({ id }) => {
 							<p className="w-full text-sm text-gray-300 mt-2 text-md">
 								Education
 							</p>
-							<div className="w-full h-1/2 mb-0 flex mt-2 max-sm:gap-1">
+							<div className="w-full h-1/2 mb-0 flex mt-2 max-sm:gap-2">
 								<div className="w-[30%] h-full flex justify-center items-start max-sm:items-center">
 									<a href="https://www.apsambala.edu.in" target="_blank">
 										{" "}
@@ -201,7 +201,7 @@ const About = ({ id }) => {
 								</div>
 								<div className="w-[70%] h-full">
 									<p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
-										2018-2021
+										2018-21
 									</p>
 									<h2 className="text-gray-100 text-md max-sm:text-sm">
 										10th and 12th
@@ -220,7 +220,7 @@ const About = ({ id }) => {
 								<div className="w-[70%] h-full">
 									<div className="w-full h-auto">
 										<p className="text-gray-300 text-[12px] max-tnd:text-[11px] ">
-											2022-2026 (ongoing)
+											2022-26
 										</p>
 										<h2 className="text-gray-100 text-md max-sm:text-sm max-sm:hidden">
 											Bachelor's in Technology
