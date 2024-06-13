@@ -144,13 +144,13 @@ const contact = ({ id }) => {
 						</SwiperSlide>
 						<SwiperSlide className=" bg-blue-600 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
-								<p className="text-gray-300 mb-4 text-lg">
-									"He is an exemplary developer, always eager to learn new skills. He is very hardworking and always committed to continuous improvement. He is dedicated to his work and is a quick learner."
+								<p className="text-gray-300 mb-4 text-sm">
+									"I've known Hiteshwar since before he started college, and his dedication and work ethic have always been impressive. He's not only highly organized and punctual, but also possesses exceptional leadership qualities. Throughout his academic career, he's consistently demonstrated a drive to excel, placing him at the forefront of his peers."
 								</p>
-								<p className="text-gray-300 text-lg">- Anushka Chauhan</p>
+								<p className="text-gray-300 text-lg">- Yogit Nainani</p>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide className=" bg-blue-400 p-4 flex justify-center items-center">
+						{/* <SwiperSlide className=" bg-blue-400 p-4 flex justify-center items-center">
 							<div className="w-full h-auto">
 								<p className="text-gray-900 mb-4 text-lg">
 									"Hiteshwar is an amazing guy, always keen to learn"
@@ -173,7 +173,7 @@ const contact = ({ id }) => {
 								</p>
 								<p className="text-gray-900 text-lg">- Himanshu Rautela</p>
 							</div>
-						</SwiperSlide>
+						</SwiperSlide> */}
 					</Swiper>
 				</div>
 			</div>

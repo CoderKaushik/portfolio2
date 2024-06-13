@@ -282,7 +282,7 @@ const Experience = ({ id }) => {
 							the institution's digital presence and facilitated seamless access
 							to information for stakeholders.
 						</div>
-						<a href="https://tpcell.iiitkota.ac.in/" target="_blank">
+						<a href="https://www.iiitkota.ac.in/" target="_blank">
 							<button className="absolute bottom-2 right-2 p-2 bg-blue-600 hover:cursor-pointer hover:bg-blue-500 rounded-xl shadow-xl text-gray-100">
 								Website
 							</button>
