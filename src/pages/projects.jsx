@@ -196,7 +196,7 @@ const Projects = ({ id }) => {
 								options={defaultOptions}
 								className="w-full h-full max-md:p-0 p-8 transition-all ease-in-out duration-75 hover:cursor-pointer"
 							>
-								<a href="https://www.hiteshwarkaushik.tech" target="_blank">
+								<a href="https://portfolio-rosy-kappa-18.vercel.app/" target="_blank">
 									<img
 										src={Portfolio1}
 										className="w-full h-full object-scale-down"
