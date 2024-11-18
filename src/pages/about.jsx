@@ -284,7 +284,7 @@ const About = ({ id }) => {
 					<div className="w-1/4 max-sm:w-1/2 max-lg:w-1/3 p-4 max-sm:p-2 h-full">
 						<div
 							className={classNames(
-								"w-full h-full rounded-xl shadow-xl bg-blue-900 flex flex-col items-center p-2 transition-opacity duration-1000",
+								"w-full h-full rounded-xl shadow-xl bg-blue-900 flex flex-col items-center p-1 md:p-2 transition-opacity duration-1000",
 								{
 									"opacity-0": !visibleDivs.includes("4"),
 									"opacity-100": visibleDivs.includes("4"),
