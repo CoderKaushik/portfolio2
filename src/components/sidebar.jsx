@@ -51,7 +51,7 @@ const Sidebar = ({ activeSection }) => {
           <div className="cube-animation">
             <span className="front">
               <a
-                href="https://drive.google.com/file/d/1v0_EVsDMn6gTcWsmof2zEE6Tbcj1ikIk/view"
+                href="https://drive.google.com/file/d/1-5ty5MC6f8Pb-yPBnyyJ4Y0W41w1bGFc/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -60,7 +60,7 @@ const Sidebar = ({ activeSection }) => {
             </span>
             <span className="back">
               <a
-                href="https://drive.google.com/file/d/1v0_EVsDMn6gTcWsmof2zEE6Tbcj1ikIk/view"
+                href="https://drive.google.com/file/d/1-5ty5MC6f8Pb-yPBnyyJ4Y0W41w1bGFc/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
